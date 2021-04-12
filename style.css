@@ -200,7 +200,7 @@ section .title::after{
     display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
