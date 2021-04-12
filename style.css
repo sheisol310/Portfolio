@@ -287,6 +287,7 @@ section .title::after{
 .myproject .title::after{
     content: " what I did";
 }
+
 .myproject .carousel .card{
     background: #222;
     border-radius: 6px;
@@ -298,6 +299,7 @@ section .title::after{
 .myproject .carousel .card:hover{
     background: crimson;
 }
+
 .myproject .carousel .card .box{
     display: flex;
     flex-direction: column;
@@ -308,11 +310,13 @@ section .title::after{
 .myproject .carousel .card:hover .box{
     transform: scale(1.05);
 }
+
 .myproject .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
 .myproject .carousel .card img{
     height: 300px;
     width: 300px;
@@ -321,9 +325,16 @@ section .title::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
+
 .myproject .carousel .card:hover img{
     border-color: #fff;
 }
+
+.myproject .max-width .carousel .card .box a {
+    margin: 0px;
+    padding: 0px;
+}
+
 .owl-dots{
     text-align: center;
     margin-top: 20px;
