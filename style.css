@@ -423,8 +423,35 @@ footer span a:hover{
 
 /* responsive media query start */
 @media (max-width: 1104px) {
+
+    .navbar.sticky{
+        padding: 20px 0;
+    }
+
+    .max-width{
+        padding-top: 25px;
+        padding-left: 80px;
+    }
+
+    .home{
+        background-size: 1200px 1390px;
+    }
+
+    .home .max-width .row{
+        margin-left: -30px;
+      }
+
+    .about .about-content .right .text{
+        font-size: 40px;
+    }
+
+    .contact .right .pic img {
+        padding-top: 80px;
+        width: 400px;
+    }
+
     .about .about-content .left img{
-        height: 350px;
+        height: 420px;
         width: 350px;
     }
 }
@@ -434,7 +461,13 @@ footer span a:hover{
         padding: 0 50px;
     }
 }
+
 @media (max-width: 947px){
+
+    .home{
+        background-size: 800px 1100px;
+    }
+
     .menu-btn{
         display: block;
         z-index: 999;
@@ -462,10 +495,10 @@ footer span a:hover{
     .navbar .menu li a{
         display: inline-block;
         margin: 20px 0;
-        font-size: 25px;
+        font-size: 50px;
     }
     .home .home-content .text-2{
-        font-size: 70px;
+        font-size: 60px;
     }
     .home .home-content .text-3{
         font-size: 35px;
@@ -473,6 +506,10 @@ footer span a:hover{
     .home .home-content a{
         font-size: 23px;
         padding: 10px 30px;
+    }
+
+    .home .home-content .home-menu-btn{
+        font-size: 20px    
     }
     .max-width{
         max-width: 930px;
@@ -488,41 +525,248 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .projects .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
+
+    .about .about-content .right .text{
+        font-size: 46px;
     }
-    .skills .skills-content .column,
+
     .contact .contact-content .column{
         width: 100%;
         margin-bottom: 35px;
     }
+
+    .contact .contact-content {
+        margin-top: 50px;
+    }
+
+    .contact .right .pic img {
+        padding-top: 0px;
+        width: 600px;
+    }
+
+    .contact .contact-content .row{
+        height: 90px;
+    }
+
+    .contact .contact-content .text {
+        font-size: 28px;
+    }
+
+    .contact .contact-content p {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+
+    .contact .contact-content .head,
+    .contact .contact-content .sub-title  {
+        font-size: 24px;
+    }
+
 }
 
 @media (max-width: 690px) {
+    
+    html {
+        width: 540px;
+    }
+
+    .navbar {
+        width: 540px;
+    }
+
     .max-width{
-        padding: 0 23px;
+        max-width: 540px;
+        margin-left: 0px;
     }
-    .home .home-content .text-2{
-        font-size: 60px;
+  
+    .home{
+        background-size: 2000px 860px;
     }
-    .home .home-content .text-3{
-        font-size: 32px;
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
     }
-    .home .home-content a{
-        font-size: 20px;
+    .menu-btn i.active:before{
+        content: "\f00d";
     }
-    .projects .serv-content .card{
+   
+    .navbar .menu.active{
+        left: -60px;
+    }
+
+    .home .max-width .row{
+        margin-left: 5px;
+      }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 50px;
+    }
+
+
+    .about .about-content .right .text{
+        font-size: 35px;
+    }
+
+    .myproject .carousel .card .text,
+    .myproject .carousel .card p     {
+        font-size: 15px;
+        margin: 10px 0 7px 0;
+    }
+    
+    .myproject .carousel .card img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .contact .contact-content .column{
         width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .contact .contact-content {
+        margin-top: 50px;
+    }
+
+    .contact .right .pic img {
+        padding-top: 0px;
+        width: 600px;
+    }
+
+    .contact .contact-content .row{
+        height: 60px;
+    }
+
+    .contact .contact-content .text {
+        font-size: 28px;
+    }
+
+    .contact .contact-content p {
+        font-size: 18px;
+        padding: 0px 5px 0px 5px;
+        padding-bottom: 10px;
+    }
+
+    .contact .contact-content .head,
+    .contact .contact-content .sub-title  {
+        font-size: 15px;
+    }
+
+    .contact .right .pic img {
+        padding-top: 0px;
+        width: 400px;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 541px) {
+    .myproject .carousel .card img{
+        height: 360px;
+        width: 360px;
+    }
+}
+
+@media (max-width: 415px) {
+
+    html {
+        width: 414px;
+    }
+
+    .navbar {
+        width: 414px;
+    }
+
+    .max-width{
+        max-width: 414px;
+        margin-left: 0px;
+    }
+
+    .home .home-content .text-1{
+        padding-bottom: 5px;
+    }
+
     .home .home-content .text-2{
-        font-size: 50px;
+        font-size: 35px;
+        padding-bottom: 5px;
     }
     .home .home-content .text-3{
-        font-size: 27px;
+        font-size: 25px;
+    }
+
+    .about .about-content .right .text{
+        font-size: 25px;
+    }
+
+    .myproject .carousel .card {
+        width: 280px;
+    }
+
+    .myproject .carousel .card img{
+        height: 220px;
+        width: 220px;
+    }
+
+    .myproject .carousel .card .text,
+    .myproject .carousel .card p     {
+        font-size: 15px;
+        margin: 10px 0 7px 0;
+    }
+
+    .contact .contact-content .head,
+    .contact .contact-content .sub-title  {
+        font-size: 12px;
+    }
+
+    .contact .right .pic img {
+        padding-top: 0px;
+        width: 280px;
+    }
+
+}
+
+@media (max-width: 376px) {
+
+    html {
+        width: 375px;
+    }
+
+    .navbar {
+        width: 375px;
+    }
+
+    .max-width{
+        max-width: 375px;
+        margin-left: 0px;
+    }
+
+    .contact .contact-content .head,
+    .contact .contact-content .sub-title  {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 330px) {
+
+    html {
+        width: 380px;
+    }
+
+    .navbar {
+        width: 380px;
+    }
+
+    .max-width{
+        max-width: 380px;
+        margin-left: 0px;
+    }
+    
+    .home .home-content .text-2{
+        font-size: 35px;
+    }
+    .home .home-content .text-3{
+        font-size: 23px;
     }
     .about .about-content .right .text,
     .skills .skills-content .left .text{
@@ -539,11 +783,32 @@ footer span a:hover{
        width: 150px;
     }
     .scroll-up-btn{
-        right: 15px;
+        right: 30px;
         bottom: 15px;
         height: 38px;
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+
+    .myproject .carousel .card img{
+        height: 220px;
+        width: 220px;
+    }
+
+    .myproject .carousel .card .text,
+    .myproject .carousel .card p     {
+        font-size: 18px;
+        margin: 10px 0 7px 0;
+    }
+
+    .contact .contact-content .head,
+    .contact .contact-content .sub-title  {
+        font-size: 12px;
+    }
+
+    .contact .right .pic img {
+        padding-top: 0px;
+        width: 280px;
     }
 }
